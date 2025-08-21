@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0; 
+    text-decoration: none;
+    list-style: none;
+}
+.langue-mobile{
+    display: block;
+}
+.langue-pc{
+    display: none;
+}
+
+.info{
+    display: none;
+}
+.icone{
+    height: 20px;
+    width: 20px;
+}
+
+.logo{
+    height: 70%;
+    width: 70%;
+    margin: 3%;
+}
+
+
+
+.nav__menu.active {
+    display: block;
+    display: flex;
+    box-sizing: border-box;
+    display: block;
+    display: grid;
+    place-items: center;
+    gap: 70px;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.home{
+    margin-top: 5.5rem;
+}
+.activite{
+    margin-left: 15px;
+}
+
+.activite i, .langue i {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.activite.show i, .langue.show i {
+    transform: rotate(180deg);
+}
+.sous{
+    display: none;
+}
+.sous.show{
+    display: block;
+}
+.link-sous{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 0;
+    font-size: large;
+}
+.link-sous li {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    margin-bottom: 45px; 
+}
+.link-sous li img.icone {
+    margin-right: 10px;
+}
+.sous-langue-pc{
+    display: none;
+}
+#sous-langue {
+  display: none;
+}
+
+#sous-langue.show {
+  display: block;
+  margin-top: 45px;
+}
+.langue-link img{
+    margin-left: 40px;
+    height: 23px;
+    width: 23px;
+}
+.langue i {
+    margin-left: 15px;
+}
+.drapeau{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.link-sous-lan{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 0;
+    font-size: large;
+    margin-left: 3%;
+}
+
+.link-sous-lan li {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    margin-bottom: 45px; 
+}
+.link-sous-lan li img.icone {
+    margin-right: 10px;
+}
+
+@media  (min-width:1024px){
+        .activite-mobile{
+            display: none;
+        }
+        .activite-pc{
+            display: block;
+        }
+        .info{
+            margin-top: 50px;
+            margin-left: 45%;
+            display: flex;
+        }
+        .icone{
+            margin-right: 5px;
+            height: 20px;
+            width: 20px;
+        }
+        .email{
+            margin-left: 20px;
+        }
+        .logo{
+            margin-left: 80px;
+            max-width: 400px;
+            position: relative;
+            z-index: 2;
+        }
+        .menu-ham{
+            display: none;
+        }
+        .langue-mobile{
+            display: none;
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+        }
+        .navbar-mobile{
+            margin-left: 40px;
+            margin: 0;
+            display: flex;
+        }
+        .home{
+            margin-top: 0;
+        }
+        .nav__menu {
+            display: flex;
+        }
+        .nav__menu li {
+            margin-top: 45px;
+            margin-left: 45px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav__menu li:hover {
+            color: red;
+        }
+        .nav__menu li::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: -10px;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: red;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .nav__menu li:hover::before {
+            opacity: 1;
+        }
+        .drapeau{
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+        }         
+        .activite-pc {
+            position: relative;
+        }    
+        .sous {
+            display: none; 
+            position: absolute;
+            top: 100%;
+        }
+        .activite-pc:hover .sous {
+            display: block;
+        }
+        .activite-pc:hover i {
+            transition: transform 0.3s ease-in-out;
+            transform: rotate(180deg);
+        }
+        #link-sous-pc a{
+            align-items: center;
+            color: black;
+        }
+        .link-sous a {
+            display: flex;
+            align-items: center;
+        } 
+        .link-sous a .icone {
+            margin: 10px;
+        }
+        #link-sous-pc:hover{
+            background-color: #D3D3D3;
+        }
+        .langue-pc{
+            position: relative;
+            display: block;
+            margin-left: 110px;
+        }
+        .langue-pc img{
+            width:  25px;
+            height: 25px;
+        }
+        .sous-langue-pc{
+            display: none;
+            background-color: white;
+            position: absolute;
+            top: 100%;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .langue-link-pc{
+            position: relative;
+        }
+        .langue-pc:hover i {
+            transition: transform 0.3s ease-in-out;
+            transform: rotate(180deg);
+        }
+        .langue-pc:hover .sous-langue-pc{
+            display: block;
+        }
+        .link-sous-lan{
+            margin-left: -10px;
+        }
+        .link-sous-lan li {
+            display: flex;
+            align-items: center;
+            gap: 1%;
+            margin-bottom: 0; 
+        }
+        
+        a{
+            color: black;
+        }
+        li{
+            color: black;
+        }
+        footer{
+            margin-top: 50px;
+            height: 110px;
+            width: 1905px;
+            background-color: #333333;
+            display: flex;
+            align-items: center;
+        }
+        .logo-reseau-footer{
+            display: flex;
+            position: absolute;
+            margin-left: 180px;
+
+        }
+        .logo-reseau-footer img{
+            width: 30px;
+            height: 30px;
+            margin-left: 35px;
+        }
+        .info-footer {
+            position: absolute;
+            margin-left: 650px;
+            margin-top: 45px;
+            font-size: 20px;
+            display: flex;
+            color: white;
+            align-items: center;
+        }
+        .copyright {
+            font-size: 20px;
+            color: white;
+            display: flex;
+            margin-top: 15px;
+            margin-left: 1500px;
+            flex-direction: column;
+            float: right;
+        }
+        .copyright p {
+            margin-top: 20px;
+        }
+}

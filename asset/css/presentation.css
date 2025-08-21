@@ -1,0 +1,33 @@
+h1{
+    background-color: black;
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-right: 0;
+}
+p{
+    font-size: 10px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+footer{
+    display: none;
+}
+@media (min-width:1024px){
+    h1{
+        margin-left: 70px;
+        margin-right: 180px;
+        margin-top: 160px;
+    }
+    p{
+        font-size: 20px;
+        margin-top: 40px;
+        margin-left: 90px;
+    }
+    footer{
+        display: block;
+    }
+}    
