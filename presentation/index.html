@@ -6,111 +6,76 @@
     <title>Eldocam - Bienvenue</title>
     <link rel="stylesheet" href="/asset/css/style.css">
     <link rel="stylesheet" href="/asset/css/presentation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="info">
-               <div class="tel">
-                    <img class="icone" src="/asset/images/appel-telephonique.png" alt="">
-                    <a href="tel:+320473222274">+32 0473 22 22 74</a>
-               </div> 
-               <div class="email">
-                    <img class="icone" src="/asset/images/email.png"  alt="icone e-mail">
-                    <a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
-               </div>   
+                <div class="tel">
+                     <img class="icone" src="/asset/images/appel-telephonique.png" alt="">
+                     <a href="tel:+320473222274">+32 (0)473 22 22 74</a>
+                </div> 
+                <div class="email">
+                     <img class="icone" src="/asset/images/email.png"  alt="icone e-mail">
+                     <a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
+            </div>    </div>   
+
+            <a href="/"><img src="/asset/images/Eldocam_Logo_Final-transparant.png" class="logo" alt="Logo"></a> 
+            <div class="hamburger" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-                <div class="menu">
-                    <div class="navbar-mobile">
-                        <a href="/"><img class="logo" src="/asset/images/Eldocam_Logo_Final-transparant.png" alt="Logo de la société Eldocam S.R.L"></a>
-                        <img class="menu-ham" src="/asset/images/menu-hamburger.svg" alt="Menu hamburger">
-                    </div>
-                    <div class="nav__menu" id="nav-menu">
-                        <a href="/" style="color: red;"><li class="home">Accueil</li></a>
-                        <a href="/presentation/"><li>Présentation</li></a>
-                        <div class="activite-pc">
-                            <div class="activite" id="activite-menu">
-                                <li>Activités<i class="fa-solid fa-chevron-down"></i></li>
+            <ul class="nav__menu">
+                <li><a href="/">Acceuil</a></li>
+                <li><a href="/presentation/">Presentation</a></li>
+                
+                <div class="activite" id="activite-menu">
+                   <div class="act">
+                        <li>Activités</li>
+                        <i class="fa-solid fa-chevron-down"></i>
+                   </div> 
+                    
+                    <ul class="sous" id="sous-act">
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/activite/electricite/"><img class="icone" src="/asset/images/flash.png" alt="">Électricité générale</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/activite/parlophonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlophonie</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/activite/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Vidéosurveillance</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/activite/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Câblage de données</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/activite/domotique/"><img class="icone" src="/asset/images/smart-house.png" alt="">Domotique</a>
+                        </li>
+                    </ul>
+                </div>
+                <li class="contact"><a href="/contact/">Contact</a></li>
+
+                <div class="langue" id="langue">
+                    <li class="langue-link">
+                            <img class="icone" src="/asset/images/translation.svg" alt="">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        
+                      <ul class="sous" id="sous-langue">
+                            <div class="link-sous-lan">
+                                <a href="/presentation/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
                             </div>
-                            <ul class="sous" id="sous-act" style="background-color: white; margin-top: 0; border: 0;">
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="/activite/electricite/" style="width: 250px;"><img class="icone" src="/asset/images/flash.png" alt="">Électricité générale</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="/activite/parlophonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlophonie</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="/activite/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Vidéosurveillance</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="/activite/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Câblage de données</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="/activite/domotique/"><img class="icone" src="/asset/images/smart-house.png" alt="">Domotique</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="activite-mobile">
-                            <div class="activite" id="activite-menu-mobile">
-                                <li>Activités<i class="fa-solid fa-chevron-down"></i></li>
+                            <div class="link-sous-lan">
+                                <a href="/nl/presentatie/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Néerlandais</li></a>
                             </div>
-                            <ul class="sous" id="sous-act-mobile">
-                                <li class="link-sous">
-                                    <a style="color: black;" href="/activite/electricite/"><img class="icone" src="/asset/images/flash.png" alt="">électricité générale</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black; " href="/activite/parlophonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlophonie</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black;" href="/activite/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Vidéosurveillance</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black;" href="/activite/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Câblage de données</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black;" href="/activite/domotique/"><img class="icone" src="/asset/images/smart-house.svg" alt="">Domotique</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="/contact/"><li>Contact</li></a>
-                        <div class="langue-pc">
-                            <li class="langue-link-pc"> 
-                                <img class="icone" src="/asset/images/translation.svg" alt=""><i class="fa-solid fa-chevron-down"></i>
-                            </li>
-                            <ul class="sous-langue-pc">
-                                <div class="link-sous-lan">
-                                    <a href="/presentation/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
-                                </div>
-                                <div class="link-sous-lan">
-                                    <a href="/nl/presentatie/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Nerderlands</li></a>
-                                </div>
-                                <div class="link-sous-lan" style="margin: 0">
-                                    <a href="/en/presentation/"><li><img class="drapeau" src="/asset/images/united-kingdom.png">English</li></a>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="langue-mobile">
-                            <div class="langue" id="langue-mobile">
-                                <li class="langue-link">
-                                    <img class="icone" src="/asset/images/translation.svg" alt=""><i class="fa-solid fa-chevron-down"></i>
-                                    
-                                    <ul class="sous-langue-mobile" id="sous-langue" style="display: none;">
-                                        <div class="link-sous-lan">
-                                            <a href="/presentation/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
-                                        </div>
-                                        <div class="link-sous-lan">
-                                            <a href="/nl/presentatie/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Néerlandais</li></a>
-                                        </div>
-                                        <div class="link-sous-lan">
-                                            <a href="/en/presentation/"><li><img class="drapeau" src="/asset/images/united-kingdom.png" alt="">English</li></a>
-                                        </div>
-                                    </ul>
-                                </li>
+                            <div class="link-sous-lan">
+                                <a href="/en/presentation/"><li><img class="drapeau" src="/asset/images/united-kingdom.png" alt="">English</li></a>
                             </div>
-                        </div>
-                    </div>
-                </div>    
+                       </ul>
+                    </li>
+                </div>
+            </ul>               
         </nav>
     </header>
     <main  class="main-content">
@@ -121,21 +86,26 @@
         <p>Pour plus d'informations, consultez notre site Internet. Vous y retrouverez nos activités ainsi qu’un aperçu de tous nos services. Vous y trouverez des informations sur la parlophonie, l'électricité, les caméras de surveillance, le câblage de données et la domotique.</p>
         <p>Si vous avez des questions ou que vous souhaitez un devis, n’hésitez pas à nous contacter par le biais de notre page de <a href="../contact/">contact</a>.</p>
     </main>
-   <footer>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img style="margin-left: 180px; width: 30px;height: 30px;" class="logo-reseau" src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" alt="facebook d'Eldocam"></a>
-            
-        <a target="_blank" href="https://www.instagram.com/eldocam/"><img style="width: 30px;height: 30px;" class="logo-reseau" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
-
-        <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img style="width: 30px;height: 30px;" class="logo-reseau" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a>
-    
-        <div class="info-footer">
-            <img class="icone" src="/asset/images/appel-telephonique.png" alt=""><a class="info-footer-contact" href="tel:+320473222274">+32 0473 22 22 74</a>
-            <img style="margin-left: 30px; margin-right: 15px;" class="icone" src="/asset/images/email.png"  alt="icone e-mail"><a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
-        </div>
-        <div class="copyright">
-            <p>Copyright © 2025 Eldocam S.R.L</p>
+    <footer>
+        <div class="logo-reseau-footer">
+         <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img class="logo-reseau-fb" src="/asset/images/fblogo.ico" alt="facebook d'Eldocam"></a>
+         <a target="_blank" href="https://www.instagram.com/eldocam/"><img class="logo-reseau" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
+         <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img class="logo-reseau" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a> 
         </div> 
-</footer> 
+         
+         <div class="info-footer">
+             <div class="tel">
+                 <img class="icone" src="/asset/images/appel-telephonique.png" alt=""><a class="info-footer-contact" href="tel:+320473222274">+32 0473 22 22 74</a>
+             </div>
+             <div class="email">
+                 <img class="icone" src="/asset/images/email.png"  alt="icone e-mail"><a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
+             </div>
+         </div>
+         <div class="copyright">
+             <p>Copyright © 2025 Eldocam S.R.L</p>
+             <p>*Site web réaliser par &nbsp<a style=" text-decoration: none;" target="_blank" href="https://linktr.ee/sebbe_mercier">Sebbe Mercier</a></p>
+         </div> 
+     </footer>
 </body>
 <script src="/asset/js/menu-ham.js"></script>
 <script src="/asset/js/sous-menu.js"></script>

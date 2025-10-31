@@ -1,24 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-.info{
-    display: none;
-}
-
-.icone{
-    height: 40px;
-    width: 40px;
-}
 /* css mobile */
-@media screen and (max-width: 900px) {
-    .navbar{
+@media screen and (max-width: 900px){
+    .info {
+        display: none;
+    }
+    .navbar {
         display: flex;
     }
-    .logo{
+    .logo {
         height: 30px;
-        margin: 10px;
+        margin: 16px;
     }
     .hamburger {
         display: flex; 
@@ -29,7 +25,7 @@
         height: 40px; 
         cursor: pointer;
         transition: transform 0.3s ease;
-        margin-left: 120px;
+        margin-left: 160px;
         margin-top: 15px;
     }
     .bar {
@@ -51,93 +47,326 @@
     .hamburger.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px) scale(1.5);
     }
+    .hidden {
+        display: none;
+    }
     .nav__menu {
         display: none; 
         list-style: none;
         flex-direction: column; 
         position: absolute;
-        margin-top: 120px;
+        margin-top: 100px;
         margin-left: 160px;
     }
     .nav__menu.active {
         display: block;
-        transition: 0.3s;
         display: flex;
     }
-    .nav__menu li{
-        margin-top: 80px;
+    .nav__menu li {
+        margin-top: 60px;
     }
-    .nav__menu a{
+    .nav__menu a {
         color: black;
         text-decoration: none;
     }
-
-    .sous{
-        display: none;
+    .act {
+        display: flex;
     }
-
-    .sous.block{
-        display: block;
+    .rotate {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+    
+    .fa-chevron-down {
+        transition: transform 0.3s ease;
+    }
+    
+    .activite i {
+        margin-top: 65px;
+        margin-left: 10px;
+    }
+    .sous {
+        display: none;
+        transition: all 0.5s;
+    }
+    .icone {
+        height: 30px;
+        width: 30px;
+    }
+    .langue {
+        margin-left: 10px;
+    }
+    .link-sous-lan {
+        align-items: center;
+        display: flex;
+    }
+    .drapeau {
+        height: 40px;
+        width: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .logo-reseau-fb {
+        height: 35px;
+        margin-left: 80px;
+    }
+    .logo-reseau {
+        height: 35px;
+        margin-left: 50px;
+    }
+    footer {
+        border-top: 4px solid #000000; /* Ligne de séparation */
+    }
+    
+    .logo-reseau-footer{
+        margin-top: 25px;
+    }
+    .info-footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .info-footer img{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .email {
+        margin-top: 10px;
+    }
+    .copyright {
+        margin-bottom: 70px;
+        
+    }
+    .copyright p {
+        margin-top: 35px;
+        margin-left: 70px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
     }
 }
 
-/* css pc */
-@media screen and (min-width: 900px) {
-    
-    .navbar {
-        max-width: 1200px;
-        margin: 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+/* css tablette */
+@media (min-width:750px){
+
+
+    .logo{
+        height: 40px;
+        margin: 15px;
     }
-    .logo {
+
+    .hamburger{
+        margin-left: 320px;
+
+    }
+    .nav__menu{
+        margin-top:150px;
+        margin-left: 270px
+    }
+
+}
+
+/* css pc */
+@media  (min-width:1024px){
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    .info{
+        margin-top: 50px;
+        margin-left: 50%;
+        display: flex;
+    }
+    .icone{
+        margin-right: 5px;
+        height: 20px;
+        width: 20px;
+    }
+    .tel:hover , .email:hover a{
+        transition: 0.3s;
+        color: red;
+    }
+    .tel:hover a{
+        transition: 0.3s;
+        color: red;
+    }
+    .email{
         margin-left: 20px;
-        height: 50px;
+    }
+    .logo{
+        height: 70px;
+        margin-top: 10px;
+        margin-left: 50px;
     }
     .nav__menu {
         display: flex;
         list-style: none;
-        margin-top: 40px;
-    }
-    .nav__menu a{
-        text-decoration: none;
-        margin-left: 190px;
-        transition: 0.3s;
-        color: black;
-    }
-    .activite , .langue{
-        margin-left: 180px;
-    }
-    .nav__menu a:hover{
-        transition: 0.3s;
-        color: red;
-        
-    }
-    /* Add this to your CSS */
-
-    .nav__menu li a {
+        margin-left: 550px;
+        margin-top: -50px;
+    } 
+    .nav__menu li {
         position: relative;
-      }
-      
-      .nav__menu li a::before {
-        content: "";
+        display: inline-block;
+        margin-right: 30px;
+    } 
+    .nav__menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        padding: 5px 10px;
+        transition: color 0.3s ease;
+    } 
+    .nav__menu a{
+        margin-right: 30px;
+    }
+    .nav__menu li:hover > a {
+        color: red;
+    } 
+    .nav__menu li::before {
+        content: '';
         position: absolute;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
+        left: 35%;
+        top: -10px;
+        width: 8px;
+        height: 8px;
         background-color: red;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
+        border-radius: 50%;
+        transform: translateX(-50%) scale(0);
+        transition: transform 0.3s ease;
+    } 
+    .nav__menu li:hover::before {
+        transform: translateX(-50%) scale(1);
+    }
+
+    .activite , .langue {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
       
-      .nav__menu li a:hover::before {
+    .activite i , .langue i{
+        transition: transform 0.3s ease;
+    }
+    
+    .activite i{
+        margin-left: -30px;
+        margin-right: 50px;
+    }
+    
+    .activite:hover i , .langue:hover i  {
+        transform: rotate(180deg);
+    }
+    .activite li:hover, .langue li:hover {
+        color: red;
+    }
+      
+    .sous {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        position: absolute;
+        z-index: 100;
+        width: 300px;
+        top: 30px;
+        left: -40px;
+      }
+      .activite:hover .sous, .langue:hover .sous {
+        visibility: visible;
         opacity: 1;
       }
-    .langue{
+      .link-sous {
+        padding: 8px 12px;
+        border-radius: 4px;
+        background-color: #ffff;
         display: flex;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .link-sous img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+      .link-sous:hover {
+        background-color: #f0f0f0;
+        color: red;
+      }
+      .sous a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+      }
+      .sous a:hover {
+        color: red;
+      }
+      
+      .link-sous-lan {
+        display: flex;
+        align-items: center;  /* Aligner le texte et l'image sur la même ligne */
+        margin-bottom: 10px;  /* Espacement entre les éléments */
+    }
+    
+    .link-sous-lan img.drapeau {
+        position: relative;  /* Permet de déplacer l'image par rapport à sa position normale */
+        top: 6px;/*Déplace uniquement l'image vers le bas */
+        margin-right: 8px; /* Espacement entre l'image et le texte */
+        width: 25px; /* Ajustez la taille de l'image si nécessaire */
+    }
+
+
+      
+    footer{
+        margin-top: 50px;
+        height: 110px;
+        background-color: #525252;
+        display: flex;
+        align-items: center;
+    }
+    .logo-reseau-footer{
+        display: flex;
+        position: absolute;
+        margin-left: 180px;
+
+    }
+    .logo-reseau-footer img{
+        width: 30px;
+        height: 30px;
+        margin-left: 35px;
+    }
+    .info-footer {
+        position: absolute;
+        margin-left: 450px;
+        margin-top: 8px;
+        font-size: 20px;
+        display: flex;
+        color: white;
+        align-items: center;
+    }
+    .copyright {
+        font-size: 20px;
+        color: white;
+        display: flex;
+        margin-top: 10px;
+        margin-left: 60%;
+        flex-direction: column;
+        float: right;
+    }
+    .copyright p {
+        margin-top: 10px;
+    }
+    .copyright a:hover{
+        color: red;
+        transition: all 0.3s;
     }
 }

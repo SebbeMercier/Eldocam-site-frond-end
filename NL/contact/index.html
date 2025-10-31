@@ -1,175 +1,147 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eldocam  -  Contact</title>
+    <title>Eldocam - Contact</title>
     <link rel="stylesheet" href="../../asset/css/style.css">
     <link rel="stylesheet" href="../../asset/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="info">
-               <div class="tel">
-                    <img class="icone" src="/asset/images/appel-telephonique.png" alt="">
-                    <a href="tel:+320473222274">+32 0473 22 22 74</a>
-               </div> 
-               <div class="email">
-                    <img class="icone" src="/asset/images/email.png"  alt="icone e-mail">
-                    <a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
-               </div>   
-            </div>
-            <div class="menu">
-                <div class="navbar-mobile">
-                    <a href="/nl/"><img class="logo" src="/asset/images/Eldocam_Logo_Final-transparant.png" alt="Eldocam S.R.L"></a>
-                    <img class="menu-ham" src="/asset/images/menu-hamburger.svg" alt="Menu hamburger">
-                </div>
-                <div class="nav__menu" id="nav-menu">
-                    <a href="/nl/" style="color: red;"><li class="home">home</li></a>
-                    <a href="/nl/presentatie/"><li>Presentatie</li></a>
-                    <div class="activite-pc">
-                        <div class="activite" id="activite-menu">
-                            <li>Activités<i class="fa-solid fa-chevron-down"></i></li>
-                        </div>
-                        <ul class="sous" id="sous-act" style="background-color: white; margin-top: 0; border: 0;">
-                            <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                <a href="/nl/activiteit/elektriciteit/" style="width: 250px;"><img class="icone" src="/asset/images/flash.png" alt="">Algemene elektriciteit</a>
-                            </li>
-                            <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                <a href="/nl/activiteit/Parlofonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlofonie</a>
-                            </li>
-                            <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                <a href="/nl/activiteit/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Videobewaking</a>
-                            </li>
-                            <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                <a href="/nl/activiteit/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Gegevensbekabeling</a>
-                            </li>
-                            <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                <a href="/nl/activiteit/Domotica/"><img class="icone" src="/asset/images/smart-house.png" alt="">Domotica</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="activite-mobile">
-                        <div class="activite" id="activite-menu-mobile">
-                            <li>activiteit<i class="fa-solid fa-chevron-down"></i></li>
-                        </div>
-                        <ul class="sous" id="sous-act-mobile">
-                            <li class="link-sous">
-                                <a style="color: black;" href="/nl/activiteit/elektriciteit/"><img class="icone" src="/asset/images/flash.png" alt="">Algemene elektriciteit</a>
-                            </li>
-                            <li class="link-sous">
-                                <a style="color: black; " href="/nl/activiteit/Parlofonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlofonie</a>
-                            </li>
-                            <li class="link-sous">
-                                <a style="color: black;" href="/nl/activiteit/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Videobewaking</a>
-                            </li>
-                            <li class="link-sous">
-                                <a style="color: black;" href="/nl/activiteit/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Gegevensbekabeling</a>
-                            </li>
-                            <li class="link-sous">
-                                <a style="color: black;" href="/nl/activiteit//Domotica/"><img class="icone" src="/asset/images/smart-house.svg" alt="">Domotica</a>
-                            </li>
-                        </ul>
-                    </div>
-                        <a href="/nl/contact/"><li>Contact</li></a>
-                        
-                        <div class="langue-pc">
-                            <li class="langue-link-pc"> 
-                                <img class="icone" src="/asset/images/translation.svg" alt=""><i class="fa-solid fa-chevron-down"></i>
-                            </li>
-                            
-                            <ul class="sous-langue-pc">
-                                <div class="link-sous-lan">
-                                    <a href="/contact/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
-                                </div>
-                                <div class="link-sous-lan">
-                                    <a href="/nl/contact/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Nerderlands</li></a>
-                                </div>
-                                <div class="link-sous-lan" style="margin: 0">
-                                    <a href="/en/contact/"><li><img class="drapeau" src="/asset/images/united-kingdom.png">English</li></a>
-                                </div>
-                            </ul>
-                        </div>
 
-                        <div class="langue-mobile">
-                            <div class="langue" id="langue-mobile">
-                                <li class="langue-link">
-                                    <img class="icone" src="/asset/images/translation.svg" alt=""><i class="fa-solid fa-chevron-down"></i>
-                                    
-                                    <ul class="sous-langue-mobile" id="sous-langue" style="display: none;">
-                                        <div class="link-sous-lan">
-                                            <a href="/contact/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
-                                        </div>
-                                        <div class="link-sous-lan">
-                                            <a href="/nl/contact/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Néerlandais</li></a>
-                                        </div>
-                                        <div class="link-sous-lan">
-                                            <a href="/en/contact/"><li><img class="drapeau" src="/asset/images/united-kingdom.png" alt="">English</li></a>
-                                        </div>
-                                    </ul>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-        </nav>
-    </header>
-    <main  class="main-content">
-        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.3362515553868!2d4.257507476222161!3d50.453462887147225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c230b9c78e5e51%3A0x934f55fe216d3e2e!2sEldocam!5e0!3m2!1sfr!2sbe!4v1732034041749!5m2!1sfr!2sbe"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-        <h1 class="info-contact-text">Contactgegevens</h1>
-        
-        <p class="text" style="margin-top: 60px;">Als je vragen hebt of een offerte wilt ontvangen, aarzel dan niet om contact met ons op te nemen via telefoon of e-mail.</p>
-        
-        <p class="text" style="margin-top: 10px">Je kunt ook onderstaand contactformulier gebruiken. We helpen je graag verder.</p>
-        
-        <h4 class="eldocam">Eldocam</h4>
-        <div class="info-contact">
-            <p>Rue Ernest Solvay 225<p>
-            <p>7141 Carnières -&nbsp;Belgie</p>
-            <p>Gsm: <a href="tel:0473 22 22 74">0473 22 22 74</a></p>
-            <P>Mail :&nbsp;<a href="mailto:info@eldocam.com">info@eldocam.com</a></p>
-            <P>TVA BE 460 209 867</p>
-        </div>
-        
-        <div class="reseau-sociaux">
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img class="logo-reseau" src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" alt="facebook d'Eldocam"></a>
-            <a target="_blank" href="https://www.instagram.com/eldocam/"><img style="width: 30px;height: 30px;" class="logo-reseau" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
-            <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img class="logo-reseau" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a>
-        </div>
-        <h1 class="contact">Contactformulier :</h1>
-        <form class="contact-form" action="/api/contact/" method="POST" onsubmit="return validateRecaptcha()">
-            <input type="hidden" name="language" value="fr">
-            <div class="input">
-                <input type="text" id="name" name="name" placeholder="Naam:" required><br>
-                <input type="email" id="email" name="email" placeholder="E-mail:" required><br>
-                <input type="tel" id="tel" name="tel" placeholder="Gsm :" required><br>
-                <textarea id="message" name="message" placeholder="bericht:" required></textarea>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="info">
+            <div class="tel">
+                <img class="icone" src="/asset/images/appel-telephonique.png" alt="">
+                <a href="tel:+320473222274">+32 0473 22 22 74</a>
             </div>
-        
-            <div class="g-recaptcha" data-sitekey="6LdEa4AqAAAAACAPy0nz3zZTvoZ7CVvDX6gCHVub"></div>
-            
-            <button class="envoyer" type="submit">Envoyer</button>
-        </form>
-    </main>
-    <footer>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img style="margin-left: 180px; width: 30px;height: 30px;" class="logo-reseau" src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" alt="facebook d'Eldocam"></a> 
-        <a target="_blank" href="https://www.instagram.com/eldocam/"><img style="width: 30px;height: 30px;" class="logo-reseau" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
-        <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img style="width: 30px;height: 30px;" class="logo-reseau" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a>
-        <div class="info-footer">
-            <img class="icone" src="/asset/images/appel-telephonique.png" alt=""><a class="info-footer-contact" href="tel:+320473222274">+32 0473 22 22 74</a>
-            <img style="margin-left: 30px; margin-right: 15px;" class="icone" src="/asset/images/email.png"  alt="icone e-mail"><a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
+            <div class="email">
+                <img class="icone" src="/asset/images/email.png"  alt="icone e-mail">
+                <a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
+            </div>    </div>
+
+        <a href="/nl/"><img src="/asset/images/Eldocam_Logo_Final-transparant.png" class="logo" alt="Logo"></a>
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+        <ul class="nav__menu">
+            <li><a href="/nl/">Home</a></li>
+            <li><a href="/nl/presentatie/">Présentatie</a></li>
+
+            <div class="activite" id="activite-menu">
+                <div class="act">
+                    <li>Activiteit</li>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <ul class="sous" id="sous-act">
+                    <li class="link-sous" id="link-sous-pc">
+                        <a href="/nl/activiteit/elektriciteit/"><img class="icone" src="/asset/images/flash.png" alt="">Algemeen électric</a>
+                    </li>
+                    <li class="link-sous" id="link-sous-pc">
+                        <a href="/nl/activiteit/Parlofonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlophonie</a>
+                    </li>
+                    <li class="link-sous" id="link-sous-pc">
+                        <a href="/nl/activiteit/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Camera</a>
+                    </li>
+                    <li class="link-sous" id="link-sous-pc">
+                        <a href="/nl/activiteit/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Ethernet</a>
+                    </li>
+                    <li class="link-sous" id="link-sous-pc">
+                        <a href="/nl/activiteit/domotica/"><img class="icone" src="/asset/images/smart-house.png" alt="">Domotica</a>
+                    </li>
+                </ul>
+            </div>
+            <li class="contact"><a href="/nl/contact/">Contact</a></li>
+
+            <div class="langue" id="langue">
+                <li class="langue-link">
+                    <img class="icone" src="/asset/images/translation.svg" alt="">
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                    <ul class="sous" id="sous-langue">
+                        <div class="link-sous-lan">
+                            <a href="/contact/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
+                        </div>
+                        <div class="link-sous-lan">
+                            <a href="/nl/contact/index.html"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Neederlands</li></a>
+                        </div>
+                        <div class="link-sous-lan">
+                            <a href="/en/contact/"><li><img class="drapeau" src="/asset/images/united-kingdom.png" alt="">English</li></a>
+                        </div>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-content">
+    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.3362515553868!2d4.257507476222161!3d50.453462887147225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c230b9c78e5e51%3A0x934f55fe216d3e2e!2sEldocam!5e0!3m2!1snl!2sbe!4v1732034041749!5m2!1snl!2sbe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1 class="info-contact-text">Contactgegevens</h1>
+    <p class="text" style="margin-top: 60px;">Als je vragen hebt of een offerte wilt ontvangen, aarzel dan niet om contact met ons op te nemen via telefoon of e-mail.</p>
+    <p class="text" style="margin-top: 10px;">Je kunt ook het onderstaande contactformulier gebruiken. We helpen je graag verder.</p>
+
+    <h4 class="eldocam">Eldocam</h4>
+    <div class="info-contact">
+        <p>Rue Ernest Solvay 225</p>
+        <p>7141 Carnières - België</p>
+        <p>Gsm: <a href="tel:0473 22 22 74">0473 22 22 74</a></p>
+        <p>Mail: <a href="mailto:info@eldocam.com">info@eldocam.com</a></p>
+        <p>BTW BE 460 209 867</p>
+    </div>
+
+    <div class="reseau-sociaux">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img style="margin-left: 0" class="logo-reseau-contact" src="/asset/images/fblogo.ico" alt="facebook d'Eldocam"></a>
+        <a target="_blank" href="https://www.instagram.com/eldocam/"><img style="width: 30px;height: 30px;" class="logo-reseau-contact" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
+        <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img class="logo-reseau-contact" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a>
+    </div>
+
+    <h1 class="info-contact-text">Contactformulier</h1>
+    <form class="contact-form" action="/api/contact" method="POST">
+        <input type="hidden" name="language" value="nl">
+
+        <div class="input">
+            <input type="text" id="name" name="name" placeholder="Nom:" required><br>
+            <input type="email" id="email" name="email" placeholder="E-mail:" required><br>
+            <input type="tel" id="tel" name="tel" placeholder="Téléphone:" required><br>
+            <textarea id="message" name="message" placeholder="Message:" required></textarea>
+        </div>
+
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAB99Asyikv_MEQ6i"></div>
+
+        <button class="envoyer" type="submit">Envoyer</button>
+    </form>
+</main>
+
+<footer>
+    <div class="logo-reseau-footer">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img class="logo-reseau-fb" src="/asset/images/fblogo.ico" alt="facebook Eldocam"></a>
+        <a target="_blank" href="https://www.instagram.com/eldocam/"><img class="logo-reseau" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
+        <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img class="logo-reseau" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a> 
+    </div> 
+             
+    <div class="info-footer">
+        <div class="tel">
+            <img class="icone" src="/asset/images/appel-telephonique.png" alt=""><a class="info-footer-contact" href="tel:+320473222274">+32 0473 22 22 74</a>
+        </div>
+        <div class="email">
+            <img class="icone" src="/asset/images/email.png"  alt="icone e-mail"><a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
+        </div>
+    </div>
         <div class="copyright">
             <p>Copyright © 2025 Eldocam S.R.L</p>
+            <p>*Website gemaakt door&nbsp<a style=" text-decoration: none;" target="_blank" href="https://linktr.ee/sebbe_mercier">Sebbe Mercier</a></p>
         </div> 
-    </footer>
-</main>
+</footer> 
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script src="/asset/js/menu-ham.js"></script>
 <script src="/asset/js/sous-menu.js"></script>
-<script src="/asset/js/recaptcha-validation-nl.js"></script>
 </body>
-</html> 
+</html>

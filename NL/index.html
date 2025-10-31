@@ -12,105 +12,70 @@
     <header>
         <nav class="navbar">
             <div class="info">
-               <div class="tel">
-                    <img class="icone" src="/asset/images/appel-telephonique.png" alt="">
-                    <a href="tel:+320473222274">+32 0473 22 22 74</a>
-               </div> 
-               <div class="email">
-                    <img class="icone" src="/asset/images/email.png"  alt="icone e-mail">
-                    <a href="mailto:info@eldocam.com" alt="email van eldocam S.R.L">info@eldocam.com</a>
-               </div>   
+                <div class="tel">
+                     <img class="icone" src="/asset/images/appel-telephonique.png" alt="">
+                     <a href="tel:+320473222274">+32 0473 22 22 74</a>
+                </div> 
+                <div class="email">
+                     <img class="icone" src="/asset/images/email.png"  alt="icone e-mail">
+                     <a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
+            </div>    </div>   
+
+            <a href="/nl/"><img src="/asset/images/Eldocam_Logo_Final-transparant.png" class="logo" alt="Logo"></a> 
+            <div class="hamburger" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-                <div class="menu">
-                    <div class="navbar-mobile">
-                        <a href="/nl/"><img class="logo" src="/asset/images/Eldocam_Logo_Final-transparant.png" alt="Eldocam S.R.L"></a>
-                        <img class="menu-ham" src="/asset/images/menu-hamburger.svg" alt="Menu hamburger">
-                    </div>
-                    <div class="nav__menu" id="nav-menu">
-                        <a href="/nl/" style="color: red;"><li class="home">Home</li></a>
-                        <a href="/nl/presentatie/"><li>Presentatie</li></a>
-                        <div class="activite-pc">
-                            <div class="activite" id="activite-menu">
-                                <li>Diensten<i class="fa-solid fa-chevron-down"></i></li>
+            <ul class="nav__menu">
+                <li><a href="/nl/">Home</a></li>
+                <li><a href="/nl/presentatie/">Présentatie</a></li>
+                
+                <div class="activite" id="activite-menu">
+                   <div class="act">
+                        <li>Activiteit</li>
+                        <i class="fa-solid fa-chevron-down"></i>
+                   </div> 
+                    
+                    <ul class="sous" id="sous-act">
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/nl/activiteit/elektriciteit/"><img class="icone" src="/asset/images/flash.png" alt="">Algemeen électric</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/nl/activiteit/Parlofonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlophonie</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/nl/activiteit/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Camera</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/nl/activiteit/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Ethernet</a>
+                        </li>
+                        <li class="link-sous" id="link-sous-pc">
+                            <a href="/nl/activiteit/domotica/"><img class="icone" src="/asset/images/smart-house.png" alt="">Domotica</a>
+                        </li>
+                    </ul>
+                </div>
+                <li class="contact"><a href="/nl/contact/">Contact</a></li>
+
+                <div class="langue" id="langue">
+                    <li class="langue-link">
+                            <img class="icone" src="/asset/images/translation.svg" alt="">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        
+                      <ul class="sous" id="sous-langue">
+                            <div class="link-sous-lan">
+                                <a href="/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
                             </div>
-                            <ul class="sous" id="sous-act" style="background-color: white; margin-top: 0; border: 0;">
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="../nl/activiteit/elektriciteit/" style="width: 250px;"><img class="icone" src="/asset/images/flash.png" alt="">Algemene elektriciteit</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="../nl/activiteit/Parlofonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlofonie</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="../nl/activiteit/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Videobewaking</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="../nl/activiteit/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Gegevensbekabeling</a>
-                                </li>
-                                <li class="link-sous" id="link-sous-pc" style="margin-left: 0;">
-                                    <a href="../nl/activiteit/domotica/"><img class="icone" src="/asset/images/smart-house.png" alt="">Domotica</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="activite-mobile">
-                            <div class="activite" id="activite-menu-mobile">
-                                <li>Diensten<i class="fa-solid fa-chevron-down"></i></li>
+                            <div class="link-sous-lan">
+                                <a href="/nl/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Neederlands</li></a>
                             </div>
-                            <ul class="sous" id="sous-act-mobile">
-                                <li class="link-sous">
-                                    <a style="color: black;" href="../nl/activiteit/elektriciteit/"><img class="icone" src="/asset/images/flash.png" alt="">Algemene elektriciteit</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black; " href="../nl/activiteit/Parlofonie/"><img class="icone" src="/asset/images/interphone.png" alt="">Parlofonie</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black;" href="../nl/activiteit/camera/"><img class="icone" src="/asset/images/security-camera.png" alt="">Videobewaking</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black;" href="../nl/activiteit/ethernet/"><img class="icone" src="/asset/images/ethernet.png" alt="">Gegevensbekabeling</a>
-                                </li>
-                                <li class="link-sous">
-                                    <a style="color: black;" href="../nl/activiteit/domotica/"><img class="icone" src="/asset/images/smart-house.svg" alt="">Domotica</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="/nl/contact/"><li>Contact</li></a>
-                        <div class="langue-pc">
-                            <li class="langue-link-pc"> 
-                                <img class="icone" src="/asset/images/translation.svg" alt=""><i class="fa-solid fa-chevron-down"></i>
-                            </li>
-                            <ul class="sous-langue-pc">
-                                <div class="link-sous-lan">
-                                    <a href="/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
-                                </div>
-                                <div class="link-sous-lan">
-                                    <a href="/nl/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Nerderlands</li></a>
-                                </div>
-                                <div class="link-sous-lan" style="margin: 0">
-                                    <a href="/en/"><li><img class="drapeau" src="/asset/images/united-kingdom.png">English</li></a>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="langue-mobile">
-                            <div class="langue" id="langue-mobile">
-                                <li class="langue-link">
-                                    <img class="icone" src="/asset/images/translation.svg" alt=""><i class="fa-solid fa-chevron-down"></i>
-                                    
-                                    <ul class="sous-langue-mobile" id="sous-langue" style="display: none;">
-                                        <div class="link-sous-lan">
-                                            <a href="/"><li><img class="drapeau" src="/asset/images/france.png" alt="">Français</li></a>
-                                        </div>
-                                        <div class="link-sous-lan">
-                                            <a href="/nl/"><li><img class="drapeau" src="/asset/images/netherlands.png" alt="">Néerlandais</li></a>
-                                        </div>
-                                        <div class="link-sous-lan">
-                                            <a href="/en/"><li><img class="drapeau" src="/asset/images/united-kingdom.png" alt="">English</li></a>
-                                        </div>
-                                    </ul>
-                                </li>
+                            <div class="link-sous-lan">
+                                <a href="/en/"><li><img class="drapeau" src="/asset/images/united-kingdom.png" alt="">English</li></a>
                             </div>
-                        </div>
-                    </div>
-                </div>    
+                       </ul>
+                    </li>
+                </div>
+            </ul>               
         </nav>
     </header>
     <main  class="main-content">
@@ -120,51 +85,58 @@
         <h1 class="services-title">Onze diensten :</h1>
             
         <div class="service">
-            <img src="/asset/images/electric-1080584.webp" class="illus_service" alt="Service Image">
+           <a href="/nl/activiteit/elektriciteit/"><img src="/asset/images/electric-1080584.webp" class="illus_service" alt="Service Image"></a> 
             <div class="service-text">
-                <h3>Elektriciteit :</h3>
+                <a href="/nl/activiteit/elektriciteit/"><h3>Elektriciteit :</h3></a>
                 <p class="service-p">Vertrouw de installatie van je elektriciteit toe aan een expert.</p>
                 <p class="service-p-2">Eldocam kan je helpen bij dit proces door...</p>
             </div>
         </div>
            
         <div class="service">
-            <img src="/asset/images/digital-tablet-screen-with-smart-home-controller-wooden-table-domotique.webp" class="illus_service" alt="Service Image">
+           <a href="/nl/activiteit/domotica/"><img src="/asset/images/digital-tablet-screen-with-smart-home-controller-wooden-table-domotique.webp" class="illus_service" alt="Service Image"></a> 
             <div class="service-text">
-                <h3>Domotica :</h3>
+                <a href="/nl/activiteit/domotica/"><h3>Domotica :</h3></a>
                 <p class="service-p">Wil je de lichten aan kunnen doen met je stem?</p>
                 <p class="service-p-2">Of sluit alle gordijnen in één beweging ...</p>
             </div>
         </div>
         <div class="service">
-            <img src="/asset/images/camera.webp" class="illus_service" alt="Service Image">
+           <a href="/nl/activiteit/camera/"><img src="/asset/images/camera.webp" class="illus_service" alt="Service Image"></a>
             <div class="service-text">
-                <h3>Videobewaking :</h3>
+                <a href="/nl/activiteit/camera/"><h3>Videobewaking :</h3></a>
                 <p class="service-p">Eldocam zorgt ervoor dat je rustig kunt slapen,</p>
                 <p class="service-p-2">dankzij ons brede assortiment bewakingscamera's.</p>
             </div>
         </div>
         <div class="service">
-            <img src="/asset/images/thomas-jensen-ISG-rUel0Uw-unsplash-reseaux.webp" class="illus_service" alt="Service Image">
+            <a href="/nl/activiteit/ethernet/"><img src="/asset/images/thomas-jensen-ISG-rUel0Uw-unsplash-reseaux.webp" class="illus_service" alt="Service Image"></a>
             <div class="service-text">
-                <h3>Gegevensbekabeling :</h3>
+                <a href="/nl/activiteit/ethernet/"><h3>Gegevensbekabeling :</h3></a>
                 <p class="service-p">Een wereld zonder telefoons, internet of andere toepassingen</p>
                 <p class="service-p-2">is momenteel onvoorstelbaar.</p>
             </div>
         </div>
-    <footer>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img style="margin-left: 180px; width: 30px;height: 30px;" class="logo-reseau" src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" alt="facebook d'Eldocam"></a>
-        
-        <a target="_blank" href="https://www.instagram.com/eldocam/"><img style="width: 30px;height: 30px;" class="logo-reseau" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
-        <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img style="width: 30px;height: 30px;" class="logo-reseau" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a>
-        <div class="info-footer">
-            <img class="icone" src="/asset/images/appel-telephonique.png" alt=""><a class="info-footer-contact" href="tel:+320473222274">+32 0473 22 22 74</a>
-            <img style="margin-left: 30px; margin-right: 15px;" class="icone" src="/asset/images/email.png"  alt="icone e-mail"><a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
-        </div>
-        <div class="copyright">
-            <p style="margin-top: -20px;">Copyright © 2025 Eldocam S.R.L</p>
-        </div> 
-    </footer> 
+        <footer>
+            <div class="logo-reseau-footer">
+             <a target="_blank" href="https://www.facebook.com/profile.php?id=61560691341373&sk=mentions"><img class="logo-reseau-fb" src="/asset/images/fblogo.ico" alt="facebook Eldocam"></a>
+             <a target="_blank" href="https://www.instagram.com/eldocam/"><img class="logo-reseau" src="https://static.cdninstagram.com/rsrc.php/v4/yG/r/De-Dwpd5CHc.png" alt="instagram d'Eldocam"></a>
+             <a target="_blank" href="https://www.snapchat.com/add/eldocam.srl?sender_web_id=9eff5920-d842-4c17-bdb4-754428eb4dec"><img class="logo-reseau" src="/asset/images/snapcode.svg" alt="Snapchat Eldocam"></a> 
+            </div> 
+             
+             <div class="info-footer">
+                 <div class="tel">
+                     <img class="icone" src="/asset/images/appel-telephonique.png" alt=""><a class="info-footer-contact" href="tel:+320473222274">+32 0473 22 22 74</a>
+                 </div>
+                 <div class="email">
+                     <img class="icone" src="/asset/images/email.png"  alt="icone e-mail"><a href="mailto:info@eldocam.com" alt="email de la société eldocam S.R.L">info@eldocam.com</a>
+                 </div>
+             </div>
+             <div class="copyright">
+                 <p>Copyright © 2025 Eldocam S.R.L</p>
+                 <p>*Website gemaakt door&nbsp<a style=" text-decoration: none;" target="_blank" href="https://linktr.ee/sebbe_mercier">Sebbe Mercier</a></p>
+             </div> 
+         </footer> 
 </main>
 </body>
 <script src="/asset/js/menu-ham.js"></script>

@@ -46,11 +46,11 @@ a{
     margin-top: 10px;
 }
 .input input{ 
-    width: 190px;
-    height: 30px;
+    width: 120px;
+    height: 13px;
     padding: 10px;
     margin-top: 20px;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 .input input:focus {
     outline: none;
@@ -68,9 +68,9 @@ textarea{
     border-color: red;
     border-radius: 6px;
 }
-.g-recaptcha{
+.cf-turnstile{ 
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 button{
     background-color: red;
@@ -87,86 +87,85 @@ button{
  
 
 @media (min-width:1024px){
-    
-a{
-    color:black;
-}
+        .act{
+            margin-top: -0;
+        }
+        .contact{
+            margin-top: 3px;
+        }
 
-.maps{
-    border: 0;
-    width: 1400px;
-    height: 600px;
-    margin-left: 80px;
-    margin-top: 140px;
-}
-.info-contact-text{
-    margin-top: 100px;
-    margin-left: 140px;
-}
-.text{
-    margin-top: 60px;
-    margin-left: 140px;
-}
-.reseau-sociaux{
-    margin-top: 80px;
-    margin-left: 140px;
-}
-.eldocam{
-    margin-top: 60px;
-    margin-left: 140px;
-}
-.info-contact{
-    margin-left: 140px;
-    margin-top: 20px;
-    flex-direction: column;
-}
-.info-contact p {
-    margin-top: 8px;
-}
-.contact{
-    margin-left: 140px;
-    margin-top: 40px;
-}
-.input{
-    margin-left: 180px;
-    margin-top: 25px;
-}
-.input input{
-    margin-top: 40px;
-    width: 190px;
-    height: 30px;
-    padding: 10px;
-}
-.input input:focus {
-    outline: none;
-    border-color: red;
-}
-.input textarea{
-    margin-top: 40px;
-    width: 1000px;
-    height: 150px;
-    padding: 10px;
-    border-radius: 6px;
-}
-.input textarea:focus {
-    outline: none;
-    border-color: red;
-    border-radius: 6px;
-}
-.g-recaptcha{
-    margin-top: 40px;
-    margin-left: 180px;
-}
-button{
-    background-color: red;
-    color: white;
-    width: 200px;
-    height: 40px;
-    border-color: red;
-    border-radius: 6px;
-    font-size: 16px;
-    margin-top: 70px;
-    margin-left: 180px;
-}
+        .maps{
+            border: 0;
+            width: 1400px;
+            height: 600px;
+            margin-left: 80px;
+            margin-top: 140px;
+        }
+        .info-contact-text{
+            margin-top: 100px;
+            margin-left: 140px;
+        }
+        .text{
+            margin-top: 60px;
+            margin-left: 140px;
+        }
+        .reseau-sociaux{
+            margin-top: 80px;
+            margin-left: 140px;
+        }
+        .eldocam{
+            margin-top: 60px;
+            margin-left: 140px;
+        }
+        .info-contact{
+            margin-left: 140px;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+        .info-contact p {
+            margin-top: 8px;
+        }
+        .input{
+            margin-left: 180px;
+            margin-top: 25px;
+        }
+        .input input{
+            margin-top: 40px;
+            width: 190px;
+            height: 10px;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .input input:focus {
+            outline: none;
+            border-color: red;
+        }
+        .input textarea{
+            margin-top: 40px;
+            width: 1000px;
+            height: 150px;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .input textarea:focus {
+            outline: none;
+            border-color: red;
+            border-radius: 6px;
+        }
+        .cf-turnstile{
+            margin-top: 40px;
+            margin-left: 185px;
+        }
+        button{
+            background-color: red;
+            color: white;
+            width: 200px;
+            height: 40px;
+            border-color: red;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-top: 70px;
+            margin-left: 180px;
+        }
 
 }
